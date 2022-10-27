@@ -9,8 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var display: UILabel!
+    
     @IBAction func digito(_ sender: UIButton) {
-        print("digito: \(sender.currentTitle)")
+        display.text = display.text! + sender.currentTitle!
     }
     
 }
